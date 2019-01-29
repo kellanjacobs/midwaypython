@@ -23,14 +23,16 @@ Each Lesson is in its own folder. Each lesson builds on the previous one.
 * 000 Introduction
 * 001 Hello World
 * 002 Using Cookiecutter to get started
-* 003 Application Configuration
-* 004 DebugToolBar
-* 005 Writing Unit Tests
-* 006 Writing Functional Tests
-* 007 Creating End points
-* 008 Organizing Endpoints into Classes
+* 003 Turning our app into a python package
+* 004 Application config file
+* 005 DebugToolBar
+* 006 Writing Unit Tests
+* 007 Writing Functional Tests
+* 008 Creating End points
 * 009 Returning JSON
-* 010 Logging
+* 010 Organizing Endpoints into Classes
+* 011 Logging
+
 * 011 Adding SQL Backend
 * 012 Changing our End Points to return SQL data
 * 013 Writing our horse race logic
