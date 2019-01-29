@@ -125,23 +125,23 @@ Double Click the pycharm application from your applications folder.
 
 The first dialog select the option for not having any previous settings. 
 
-![Pycharm Dialog Box 1](images/pycharmdia1.png)
+![Pycharm Dialog Box 1](https://github.com/kellanjacobs/midwaypython/blob/master/000_Setup/images/pycharmdia1.png)
 
 Next select the Darkula theme
 
-![Pycharm Dialog Box 2](images/pycharmdia2.png)
+![Pycharm Dialog Box 2](https://github.com/kellanjacobs/midwaypython/blob/master/000_Setup/images/pycharmdia2.png)
 
 On the Launcher Script Dialog select the Featured Plugin button.
 
 On the featured plugin page click to install the plugins for Markdown and BashSupport. Then click start using pycharm.
 
-![Pycharm Dialog Box 3](images/pycharmdia3.png)
+![Pycharm Dialog Box 3](https://github.com/kellanjacobs/midwaypython/blob/master/000_Setup/images/pycharmdia3.png)
 
 If you want your editor to look like mine then continue along. 
-![Pycharm Dialog Box 4](images/pycharmdia4.png)
+![Pycharm Dialog Box 4](https://github.com/kellanjacobs/midwaypython/blob/master/000_Setup/images/pycharmdia4.png)
 
 In the Welcome to Pycharm window select configure->preferences Under editor font change your font to source code pro. 
-![Pycharm Dialog Box 5](images/pycharmdia5.png)
+![Pycharm Dialog Box 5](https://github.com/kellanjacobs/midwaypython/blob/master/000_Setup/images/pycharmdia5.png)
 
 
 #Install Postman
