@@ -8,7 +8,7 @@ __pycache__/
 
 # Pycharm Config
 .idea
-
+.DS_Store
 # Virtual Environments
 ve/ 
 # Distribution / packaging

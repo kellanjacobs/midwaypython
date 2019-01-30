@@ -20,9 +20,9 @@ The plan is for this course to take 4 days of on-site training.
 
 Each Lesson is in its own folder. Each lesson builds on the previous one. 
 
-* 000 Introduction
-* 001 Hello World
-* 002 Using Cookiecutter to get started
+* 000 System Setup
+* 001 Getting Started
+
 * 003 Turning our app into a python package
 * 004 Application config file
 * 005 DebugToolBar
