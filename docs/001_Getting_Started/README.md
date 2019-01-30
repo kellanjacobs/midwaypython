@@ -132,11 +132,11 @@ From the menu bar select PyCharm->Preferences or use the shortcut key `cmd+,`
 Find our project ProjectL midway and select Project Interpreter. Click the sprocket in the upper 
 right hand corner and select add.
 
-![Pycharm Setup 1](https://github.com/kellanjacobs/midwaypython/blob/master/docs/001_Getting_Started/images/pycharmsetup1.png)
+![Pycharm Setup 1](https://raw.githubusercontent.com/kellanjacobs/midwaypython/master/docs/001_Getting_Started/images/pycharmsetup1.png)
 
 Pycharm should have found your virtual environment. If it hasn't then find your virtual environment if not link to the python binary inside your ve folder of your project
 
-![Pycharm Setup 2](https://github.com/kellanjacobs/midwaypython/blob/master/docs/001_Getting_Started/images/pycharmsetup2.png)
+![Pycharm Setup 2](https://raw.githubusercontent.com/kellanjacobs/midwaypython/master/docs/001_Getting_Started/images/pycharmsetup2.png)
 
 Save your settings.
 
@@ -145,6 +145,6 @@ Back at the main pycharm window click the add configuration button in the upper 
 Select the + symbol and add a new pyramid server template. Select your python interpreter that we created above and add 
 the full path to your development.ini file.
 
-![Pycharm Setup 3](https://github.com/kellanjacobs/midwaypython/blob/master/docs/001_Getting_Started/images/pycharmsetup3.png)
+![Pycharm Setup 3](https://raw.githubusercontent.com/kellanjacobs/midwaypython/master/docs/001_Getting_Started/images/pycharmsetup3.png)
 
 Now you can simply push the play button inside pycharm to run your server. 
