@@ -24,7 +24,7 @@ Each Lesson is in its own folder. Each lesson builds on the previous one.
 * [001 Getting Started](https://github.com/kellanjacobs/midwaypython/tree/master/docs/001_Getting_Started)
 * [002 Cleanup and Routes](https://github.com/kellanjacobs/midwaypython/tree/master/docs/002_Cleanup_and_Routes)
 * [003 Writing Tests](https://github.com/kellanjacobs/midwaypython/tree/master/docs/003_writing_tests)
-* 004 Application config file
+* [004 JSON](https://github.com/kellanjacobs/midwaypython/tree/master/docs/004_JSON)
 * 005 DebugToolBar
 * 006 Writing Unit Tests
 * 007 Writing Functional Tests
