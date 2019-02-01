@@ -20,10 +20,10 @@ The plan is for this course to take 4 days of on-site training.
 
 Each Lesson is in its own folder. Each lesson builds on the previous one. 
 
-* 000 System Setup
-* 001 Getting Started
-
-* 003 Turning our app into a python package
+* [000 System Setup](https://github.com/kellanjacobs/midwaypython/tree/master/docs/000_Setup)
+* [001 Getting Started](https://github.com/kellanjacobs/midwaypython/tree/master/docs/001_Getting_Started)
+* [002 Cleanup and Routes](https://github.com/kellanjacobs/midwaypython/tree/master/docs/002_Cleanup_and_routes)
+* [003 Writing Tests](https://github.com/kellanjacobs/midwaypython/tree/master/docs/003_writing_tests)
 * 004 Application config file
 * 005 DebugToolBar
 * 006 Writing Unit Tests
