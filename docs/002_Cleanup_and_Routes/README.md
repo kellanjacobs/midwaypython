@@ -16,9 +16,10 @@ or serve static files. We can remove the static and templates directories.
 
 ```bash
 # Start in the root directory you cloned of the project
-# Remove the static and template directories
+# Remove the static and template directories we can also delete the 404 view
 rm -Rf midway/midway/static/
 rm -Rf midway/midway/templates/
+rm midway/midway/views/notfound.py
 ```
 
 Lets modify our `setup.py` file. We are going to remove the line for pyramid_debugtoolbar.
