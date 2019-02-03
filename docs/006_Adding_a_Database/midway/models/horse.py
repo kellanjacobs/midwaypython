@@ -16,3 +16,6 @@ class Horse(Base):
     str = Column(Integer, nullable=False, default=0)
     active = Column(Integer, nullable=False, default=1)
     races = relationship('Race', back_populates="horse")
+
+    def __repr__(self):
+        return self.name
