@@ -4,4 +4,4 @@ def includeme(config):
     config.add_route('viewhorse', '/horse/{horseid}')
     config.add_route('racestanding', '/standings/race')
     config.add_route('horsestanding', '/standings/horses')
-    config.add_route('viewhorse', '/race/{raceid}')
+    config.add_route('singlerace', '/race/{raceid}')

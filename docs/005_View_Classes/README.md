@@ -139,7 +139,7 @@ def includeme(config):
     config.add_route('viewhorse', '/horse/{horseid}')
     config.add_route('racestanding', '/standings/race')
     config.add_route('horsestanding', '/standings/horses')
-    config.add_route('viewhorse', '/race/{raceid}')
+    config.add_route('singlerace', '/race/{raceid}')
 ```
 
 Last lets modify our tests to not only take advantage of our changing to classes but also that add our three new urls.
