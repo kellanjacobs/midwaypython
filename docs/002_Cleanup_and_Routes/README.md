@@ -11,18 +11,26 @@ application.
 
 ## Steps
 
-Lets start by doing some cleanup. This is going to be an api only and we do not need to render html
-or serve static files. We can remove the static and templates directories.
+### 1. Remove Unnecessary files
+
+Pyramid cookiecutter created all the boiler plate code we need to get
+and application up and running. Because pyramid is so flexiable it 
+created a website for us that had traditional web assets such as
+image file. Since we are writing an API we don't need these website
+specific files. Lets go ahead and delete them. 
 
 ```bash
 # Start in the root directory you cloned of the project
-# Remove the static and template directories we can also delete the 404 view
+# Remove the static and template directories we can also 
+# delete the 404 view
 rm -Rf midway/midway/static/
 rm -Rf midway/midway/templates/
 rm midway/midway/views/notfound.py
 ```
 
-Lets modify our `setup.py` file. We are going to remove the line for pyramid_debugtoolbar.
+### 2. Disable the pyramid_debugtoolbar
+The pyramid_debug toolbar is great. But since we are making API calls in our application we don't want to inject 
+JavaScript into our json. Modify our `midway/setup.py` file. Around line 15 remove `'pyramid_debugtoolbar',`. 
 
 ```python
 import os
@@ -87,7 +95,8 @@ setup(
 )
 ```
 
-Modify the `development.ini` to remove its reference to the pyramid_debugtoolbar.
+The `midway/setup.py` downloaded the module, but it is the `development.ini` that actually enables it. 
+Edit the `midway/development.ini` file and remove `pyramid.includes = pyramid_debugtoolbar` from lines 14 and 15.
 
 ```python
 ###
@@ -167,7 +176,7 @@ format = %(asctime)s %(levelname)-5.5s [%(name)s:%(lineno)s][%(threadName)s] %(m
 
 ```
 
-Lets add routes for our application end points. Edit the `midway/routes.py` to remove the home
+Lets add routes for our application end points. Edit the `midway/midway/routes.py` to remove the home
 route and add three new routes to manage our horses. 
 
 ```python
@@ -177,7 +186,7 @@ def includeme(config):
     config.add_route('viewhorse', '/horse/{horseid}')
 ```
 
-Now lets the the views that match up with these routes. 
+Now lets rename `midway/midway/views/default.py` to `midway/midway/views/horse.py` and add the following code.
 
 ```python
 from pyramid.view import view_config

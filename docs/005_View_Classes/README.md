@@ -13,7 +13,7 @@ In cases like this it is better to group these functions into a class.
 
 ## Steps
 
-First lets convert our functions into a single class. Open the `views/default.py` file and change the code into a class.
+First lets convert our functions into a single class. Open the `views/horse.py` file and change the code into a class.
 
 ```python
 from pyramid.view import view_config
@@ -76,7 +76,7 @@ Now that we have have updated the views into a class. Lets had three new urls.
 * /standings/horses Will return a list of all the horses in standing order. 
 * /race/RACEID Will return the results of a single race.
 
-Edit the `views/default.py` to add the new classes
+Create a new file `midway/midway/views/standing.py` to the new StandingViews class.
 
 ```python
 from pyramid.view import (
@@ -85,24 +85,6 @@ from pyramid.view import (
     )
 
 #from .. import models
-
-@view_defaults(renderer='json')
-class HorseViews:
-
-    def __init__(self, request):
-        self.request = request
-
-    @view_config(route_name='addhorse')
-    def add_horse(self):
-        return {'viewname': 'addhorse'}
-
-    @view_config(route_name='delhorse')
-    def delete_horse(self):
-        return {'viewname': 'delhorse'}
-
-    @view_config(route_name='viewhorse')
-    def view_horse(self):
-        return {'viewname': 'viewhorse'}
 
 
 @view_defaults(renderer='json')
@@ -118,6 +100,18 @@ class StandingViews:
     @view_config(route_name='racestanding')
     def race_standing(self):
         return {'viewname': 'race standing'}
+```
+
+Create a new file `midway/midway/views/race.py` to the new RaceViews class.
+
+```python
+from pyramid.view import (
+    view_config,
+    view_defaults
+    )
+
+#from .. import models
+
 
 @view_defaults(renderer='json')
 class RaceViews:
@@ -158,21 +152,21 @@ class HorseViewTests(unittest.TestCase):
         testing.tearDown()
 
     def test_add_horse(self):
-        from midway.views.default import HorseViews
+        from midway.views.horse import HorseViews
         request = testing.DummyRequest()
         inst = HorseViews(request)
         response = inst.add_horse()
         self.assertEqual('addhorse', response['viewname'])
 
     def test_del_horse(self):
-        from midway.views.default import HorseViews
+        from midway.views.horse import HorseViews
         request = testing.DummyRequest()
         inst = HorseViews(request)
         response = inst.delete_horse()
         self.assertEqual('delhorse', response['viewname'])
 
     def test_view_horse(self):
-        from midway.views.default import HorseViews
+        from midway.views.horse import HorseViews
         request = testing.DummyRequest()
         inst = HorseViews(request)
         response = inst.view_horse()
@@ -186,14 +180,14 @@ class StandingViewsTests(unittest.TestCase):
         testing.tearDown()
 
     def test_horse_standing(self):
-        from midway.views.default import StandingViews
+        from midway.views.standing import StandingViews
         request = testing.DummyRequest()
         inst = StandingViews(request)
         response = inst.horse_standing()
         self.assertEqual('horse standing', response['viewname'])
 
     def test_race_standing(self):
-        from midway.views.default import StandingViews
+        from midway.views.standing import StandingViews
         request = testing.DummyRequest()
         inst = StandingViews(request)
         response = inst.race_standing()
@@ -207,7 +201,7 @@ class RaceViewsTests(unittest.TestCase):
         testing.tearDown()
 
     def test_single_race(self):
-        from midway.views.default import RaceViews
+        from midway.views.race import RaceViews
         request = testing.DummyRequest()
         inst = RaceViews(request)
         response = inst.race_results()
