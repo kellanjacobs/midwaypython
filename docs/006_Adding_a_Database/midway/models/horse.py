@@ -13,7 +13,6 @@ class Horse(Base):
     __tablename__ = 'horses'
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False, unique=True)
-    str = Column(Integer, nullable=False, default=0)
     active = Column(Integer, nullable=False, default=1)
     races = relationship('Race', back_populates="horse")
 
