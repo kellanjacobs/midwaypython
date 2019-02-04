@@ -3,7 +3,6 @@ import sys
 
 from pyramid.paster import bootstrap, setup_logging
 from sqlalchemy.exc import OperationalError
-from random import randint
 
 from .. import models
 
@@ -13,34 +12,34 @@ def setup_models(dbsession):
     Add or update models / fixtures in the database.
 
     """
-    peter = models.horse.Horse(name='Peter', str=randint(3,18))
+    peter = models.horse.Horse(name='Peter')
     dbsession.add(peter)
 
-    lois = models.horse.Horse(name='Lois', str=randint(3, 18))
+    lois = models.horse.Horse(name='Lois')
     dbsession.add(lois)
 
-    meg = models.horse.Horse(name='Meg', str=randint(3, 18))
+    meg = models.horse.Horse(name='Meg')
     dbsession.add(meg)
 
-    chris = models.horse.Horse(name='Chris', str=randint(3, 18))
+    chris = models.horse.Horse(name='Chris')
     dbsession.add(chris)
 
-    Stewie = models.horse.Horse(name='Stewie', str=randint(3, 18))
+    Stewie = models.horse.Horse(name='Stewie')
     dbsession.add(Stewie)
 
-    Rupert = models.horse.Horse(name='Rupert', str=randint(3, 18))
+    Rupert = models.horse.Horse(name='Rupert')
     dbsession.add(Rupert)
 
-    Brian = models.horse.Horse(name='Brian', str=randint(3, 18))
+    Brian = models.horse.Horse(name='Brian')
     dbsession.add(Brian)
 
-    Cleveland = models.horse.Horse(name='Cleveland', str=randint(3, 18))
+    Cleveland = models.horse.Horse(name='Cleveland')
     dbsession.add(Cleveland)
 
-    joe = models.horse.Horse(name='Joe', str=randint(3, 18))
+    joe = models.horse.Horse(name='Joe')
     dbsession.add(joe)
 
-    Quagmire = models.horse.Horse(name='Quagmire', str=randint(3, 18))
+    Quagmire = models.horse.Horse(name='Quagmire')
     dbsession.add(Quagmire)
 
     race = models.race.Race(race_number=0, score=100, horse_id=1)

@@ -27,7 +27,7 @@ Each Lesson is in its own folder. Each lesson builds on the previous one.
 * [004 JSON](https://github.com/kellanjacobs/midwaypython/tree/master/docs/004_JSON)
 * [005 View Classes](https://github.com/kellanjacobs/midwaypython/tree/master/docs/005_View_Classes)
 * [006 Adding a Database](https://github.com/kellanjacobs/midwaypython/tree/master/docs/006_Adding_a_Database)
-* 007 Writing Functional Tests
+* [007 Query the Database](https://github.com/kellanjacobs/midwaypython/tree/master/docs/007_Query_the_Database)
 * 008 Creating End points
 * 009 Returning JSON
 * 010 Organizing Endpoints into Classes
